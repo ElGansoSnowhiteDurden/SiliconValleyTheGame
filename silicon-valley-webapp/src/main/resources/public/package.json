@@ -1,0 +1,23 @@
+{
+  "name": "amis-webapp",
+  "version": "0.0.1",
+  "description": "Amis Web Application",
+  "dependencies": {
+    "jasmine": "^2.6.0",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.1.1",
+    "karma-firefox-launcher": "^1.0.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-junit-reporter": "^1.2.0",
+    "karma-coverage": "^1.1.1"
+  },
+  "scripts": {
+    "test": "karma start karma.conf.js",
+    "test-single-run": "karma start karma.conf.js --single-run"
+  },
+  "author": "Thales Group Italia",
+  "devDependencies": {
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "amis-webapp",
+  "authors": [
+    "Thales Group Italia <comunicazione@thalesgroup.com>"
+  ],
+  "description": "Airport Web Application",
+  "main": "index.html",
+  "keywords": [
+    "Amis",
+    "Big Data",
+    "Dashboard"
+  ],
+  "homepage": "www.thales.com/en/global/presence/europe/italy",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "jquery": "3.2.1",
+    "angular": "angularjs#1.6.6",
+    "font-awesome": "4.7.0",
+     "angular-route": "1.6.6",
+    "angular-cookies": "1.6.6",
+    "angular-resource": "1.6.6",
+   "admin-lte": "~2.4"
+  },
+  "resolutions": {
+    "jquery": "v3.2.1",
+    "angular": "v1.6.6"
+  }
+}
