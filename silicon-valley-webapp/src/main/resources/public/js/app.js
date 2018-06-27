@@ -2,9 +2,8 @@ angular
     .module(
         'SiliconValleyWebapp',
         [ //'ngRoute', 
-        'ngCookies', 'ngMessages', 'ngAria',
-            'ngResource',  
-            'ngAnimate' ])
+        'ngCookies',
+            'ngResource' ])
     .config(
         [
             //'$routeProvider',
@@ -34,5 +33,5 @@ angular
 
 			*/
             } ]).run([ '$rootScope', function($rootScope) {
-      $rootScope.timezone = 'UTC';
+
     } ]);

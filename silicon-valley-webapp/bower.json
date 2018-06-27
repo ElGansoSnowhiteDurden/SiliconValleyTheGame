@@ -1,16 +1,14 @@
 {
-  "name": "amis-webapp",
+  "name": "silicon-valley-webapp",
   "authors": [
-    "Thales Group Italia <comunicazione@thalesgroup.com>"
+    "ElGansoSnowhiteDurden"
   ],
-  "description": "Airport Web Application",
+  "description": "Silicon Valley Web Application",
   "main": "index.html",
   "keywords": [
-    "Amis",
-    "Big Data",
-    "Dashboard"
+    "Games"
   ],
-  "homepage": "www.thales.com/en/global/presence/europe/italy",
+  "homepage": "https://github.com/ElGansoSnowhiteDurden/SiliconValleyTheGame",
   "private": true,
   "ignore": [
     "**/.*",
