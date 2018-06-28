@@ -9,23 +9,33 @@ package com.siliconvalley.it.model.rule;
  */
 public class BillOfExchange {
 
-    private int credit;
-    private int debit;
+  private int credit;
+  private int debit;
 
-    public int getCredit() {
-        return credit;
-    }
+  public BillOfExchange() {
+    super();
+  }
 
-    public int getDebit() {
-        return debit;
-    }
+  public BillOfExchange(int credit, int debit) {
+    super();
+    this.credit = credit;
+    this.debit = debit;
+  }
 
-    public void setCredit(int credit) {
-        this.credit = credit;
-    }
+  public int getCredit() {
+    return credit;
+  }
 
-    public void setDebit(int debit) {
-        this.debit = debit;
-    }
+  public int getDebit() {
+    return debit;
+  }
+
+  public void setCredit(int credit) {
+    this.credit = credit;
+  }
+
+  public void setDebit(int debit) {
+    this.debit = debit;
+  }
 
 }

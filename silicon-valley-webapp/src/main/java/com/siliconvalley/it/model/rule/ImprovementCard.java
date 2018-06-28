@@ -9,35 +9,46 @@ package com.siliconvalley.it.model.rule;
  */
 public class ImprovementCard {
 
-    private String name;
-    private String description;
-    private boolean remainsInPlay;
-    // TODO
-    // strategy to apply
-    // trigger condition
+  private String name;
+  private String description;
+  private boolean remainsInPlay;
+  // TODO
+  // strategy to apply
+  // trigger condition
 
-    public String getDescription() {
-        return description;
-    }
+  public ImprovementCard() {
+    super();
+  }
 
-    public String getName() {
-        return name;
-    }
+  public ImprovementCard(String name, String description, boolean remainsInPlay) {
+    super();
+    this.name = name;
+    this.description = description;
+    this.remainsInPlay = remainsInPlay;
+  }
 
-    public boolean isRemainsInPlay() {
-        return remainsInPlay;
-    }
+  public String getDescription() {
+    return description;
+  }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+  public boolean isRemainsInPlay() {
+    return remainsInPlay;
+  }
 
-    public void setRemainsInPlay(boolean remainsInPlay) {
-        this.remainsInPlay = remainsInPlay;
-    }
+  public void setDescription(String description) {
+    this.description = description;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public void setRemainsInPlay(boolean remainsInPlay) {
+    this.remainsInPlay = remainsInPlay;
+  }
 
 }

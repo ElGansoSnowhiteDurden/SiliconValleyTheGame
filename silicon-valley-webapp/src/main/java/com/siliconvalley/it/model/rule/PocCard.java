@@ -1,3 +1,6 @@
+/*
+ *
+ */
 package com.siliconvalley.it.model.rule;
 
 /**
@@ -6,32 +9,43 @@ package com.siliconvalley.it.model.rule;
  */
 public class PocCard {
 
-    private String name;
-    private String description;
-    private Category category;
+  private String name;
+  private String description;
+  private Category category;
 
-    public Category getCategory() {
-        return category;
-    }
+  public PocCard() {
+    super();
+  }
 
-    public String getDescription() {
-        return description;
-    }
+  public PocCard(String name, String description, Category category) {
+    super();
+    this.name = name;
+    this.description = description;
+    this.category = category;
+  }
 
-    public String getName() {
-        return name;
-    }
+  public Category getCategory() {
+    return category;
+  }
 
-    public void setCategory(Category category) {
-        this.category = category;
-    }
+  public String getDescription() {
+    return description;
+  }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+  public void setCategory(Category category) {
+    this.category = category;
+  }
+
+  public void setDescription(String description) {
+    this.description = description;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
 
 }

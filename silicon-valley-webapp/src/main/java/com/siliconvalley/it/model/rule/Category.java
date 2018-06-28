@@ -9,23 +9,33 @@ package com.siliconvalley.it.model.rule;
  */
 public class Category {
 
-    private String name;
-    private String description;
+  private String name;
+  private String description;
 
-    public String getDescription() {
-        return description;
-    }
+  public Category() {
+    super();
+  }
 
-    public String getName() {
-        return name;
-    }
+  public Category(String name, String description) {
+    super();
+    this.name = name;
+    this.description = description;
+  }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+  public String getDescription() {
+    return description;
+  }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+  public String getName() {
+    return name;
+  }
+
+  public void setDescription(String description) {
+    this.description = description;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
 
 }

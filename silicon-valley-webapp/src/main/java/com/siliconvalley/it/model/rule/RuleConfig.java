@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package com.siliconvalley.it.model.rule;
 
@@ -11,189 +11,186 @@ import java.util.Map;
  *
  */
 public class RuleConfig {
-    
-    private String version;
-    
-    private int numberOfMonths;
-    
-    
-    public String getVersion() {
-        return version;
-    }
 
-    
-    public void setVersion(String version) {
-        this.version = version;
-    }
+  private String version;
 
-     
-    public int getNumberOfMonths() {
-        return numberOfMonths;
-    }
+  private int numberOfMonths;
 
-    
-    public void setNumberOfMonths(int numberOfMonths) {
-        this.numberOfMonths = numberOfMonths;
-    }
+  private int numberOfPlayers;
 
-    
-    public int getNumberOfPlayers() {
-        return numberOfPlayers;
-    }
+  private int initialEthereum;
+  private int initialServer;
+  private int initialDesk;
+  private int initialRoom;
+  private int initialEmployee;
 
-    
-    public void setNumberOfPlayers(int numberOfPlayers) {
-        this.numberOfPlayers = numberOfPlayers;
-    }
+  private List<Action> actions;
 
-    
-    public int getInitialEthereum() {
-        return initialEthereum;
-    }
+  private List<ImprovementCard> improvements;
 
-    
-    public void setInitialEthereum(int initialEthereum) {
-        this.initialEthereum = initialEthereum;
-    }
+  private List<ToolCard> tools;
+  private List<Project> projects;
+  private List<PocCard> pocs;
+  private BillOfExchange billOfExchange;
+  private Map<Integer, Integer> workerSalary;
 
-    
-    public int getInitialServer() {
-        return initialServer;
-    }
+  private Map<Integer, Integer> consultantSalary;
 
-    
-    public void setInitialServer(int initialServer) {
-        this.initialServer = initialServer;
-    }
+  public RuleConfig() {
+    super();
+  }
 
-    
-    public int getInitialDesk() {
-        return initialDesk;
-    }
+  public RuleConfig(String version, int numberOfMonths, int numberOfPlayers,
+      int initialEthereum, int initialServer, int initialDesk, int initialRoom,
+      int initialEmployee, List<Action> actions, List<ImprovementCard> improvements,
+      List<ToolCard> tools, List<Project> projects, List<PocCard> pocs,
+      BillOfExchange billOfExchange, Map<Integer, Integer> workerSalary,
+      Map<Integer, Integer> consultantSalary) {
+    super();
+    this.version = version;
+    this.numberOfMonths = numberOfMonths;
+    this.numberOfPlayers = numberOfPlayers;
+    this.initialEthereum = initialEthereum;
+    this.initialServer = initialServer;
+    this.initialDesk = initialDesk;
+    this.initialRoom = initialRoom;
+    this.setInitialEmployee(initialEmployee);
+    this.actions = actions;
+    this.improvements = improvements;
+    this.tools = tools;
+    this.projects = projects;
+    this.pocs = pocs;
+    this.billOfExchange = billOfExchange;
+    this.workerSalary = workerSalary;
+    this.consultantSalary = consultantSalary;
+  }
 
-    
-    public void setInitialDesk(int initialDesk) {
-        this.initialDesk = initialDesk;
-    }
+  public List<Action> getActions() {
+    return actions;
+  }
 
-    
-    public int getInitialRoom() {
-        return initialRoom;
-    }
+  public BillOfExchange getBillOfExchange() {
+    return billOfExchange;
+  }
 
-    
-    public void setInitialRoom(int initialRoom) {
-        this.initialRoom = initialRoom;
-    }
+  public Map<Integer, Integer> getConsultantSalary() {
+    return consultantSalary;
+  }
 
-    
-    public int getInitialWorker() {
-        return initialWorker;
-    }
+  public List<ImprovementCard> getImprovements() {
+    return improvements;
+  }
 
-    
-    public void setInitialWorker(int initialWorker) {
-        this.initialWorker = initialWorker;
-    }
+  public int getInitialDesk() {
+    return initialDesk;
+  }
 
-    
-    public List<Action> getActions() {
-        return actions;
-    }
+  public int getInitialEmployee() {
+    return initialEmployee;
+  }
 
-    
-    public void setActions(List<Action> actions) {
-        this.actions = actions;
-    }
+  public int getInitialEthereum() {
+    return initialEthereum;
+  }
 
-    
-    public List<ImprovementCard> getImprovements() {
-        return improvements;
-    }
+  public int getInitialRoom() {
+    return initialRoom;
+  }
 
-    
-    public void setImprovements(List<ImprovementCard> improvements) {
-        this.improvements = improvements;
-    }
+  public int getInitialServer() {
+    return initialServer;
+  }
 
-    
-    public List<ToolCard> getTools() {
-        return tools;
-    }
+  public int getNumberOfMonths() {
+    return numberOfMonths;
+  }
 
-    
-    public void setTools(List<ToolCard> tools) {
-        this.tools = tools;
-    }
+  public int getNumberOfPlayers() {
+    return numberOfPlayers;
+  }
 
-    
-    public List<Project> getProjects() {
-        return projects;
-    }
+  public List<PocCard> getPocs() {
+    return pocs;
+  }
 
-    
-    public void setProjects(List<Project> projects) {
-        this.projects = projects;
-    }
+  public List<Project> getProjects() {
+    return projects;
+  }
 
-    
-    public List<PocCard> getPocs() {
-        return pocs;
-    }
+  public List<ToolCard> getTools() {
+    return tools;
+  }
 
-    
-    public void setPocs(List<PocCard> pocs) {
-        this.pocs = pocs;
-    }
+  public String getVersion() {
+    return version;
+  }
 
-    
-    public BillOfExchange getBillOfExchange() {
-        return billOfExchange;
-    }
+  public Map<Integer, Integer> getWorkerSalary() {
+    return workerSalary;
+  }
 
-    
-    public void setBillOfExchange(BillOfExchange billOfExchange) {
-        this.billOfExchange = billOfExchange;
-    }
+  public void setActions(List<Action> actions) {
+    this.actions = actions;
+  }
 
-    
-    public Map<Integer, Integer> getWorkerSalary() {
-        return workerSalary;
-    }
+  public void setBillOfExchange(BillOfExchange billOfExchange) {
+    this.billOfExchange = billOfExchange;
+  }
 
-    
-    public void setWorkerSalary(Map<Integer, Integer> workerSalary) {
-        this.workerSalary = workerSalary;
-    }
+  public void setConsultantSalary(Map<Integer, Integer> consultantSalary) {
+    this.consultantSalary = consultantSalary;
+  }
 
-    
-    public Map<Integer, Integer> getConsultantSalary() {
-        return consultantSalary;
-    }
+  public void setImprovements(List<ImprovementCard> improvements) {
+    this.improvements = improvements;
+  }
 
-    
-    public void setConsultantSalary(Map<Integer, Integer> consultantSalary) {
-        this.consultantSalary = consultantSalary;
-    }
+  public void setInitialDesk(int initialDesk) {
+    this.initialDesk = initialDesk;
+  }
 
-    private int numberOfPlayers;
-    
-    private int initialEthereum;
-    private int initialServer;
-    private int initialDesk;
-    private int initialRoom;
-    private int initialWorker;
-    
-    private List<Action> actions;
-    private List<ImprovementCard> improvements;
-    private List<ToolCard> tools;
-    private List<Project> projects;
-    private List<PocCard> pocs;
-    
-    private BillOfExchange billOfExchange;
-    
-    private Map<Integer,Integer> workerSalary;
-    
-    private Map<Integer,Integer> consultantSalary;
+  public void setInitialEmployee(int initialEmployee) {
+    this.initialEmployee = initialEmployee;
+  }
+
+  public void setInitialEthereum(int initialEthereum) {
+    this.initialEthereum = initialEthereum;
+  }
+
+  public void setInitialRoom(int initialRoom) {
+    this.initialRoom = initialRoom;
+  }
+
+  public void setInitialServer(int initialServer) {
+    this.initialServer = initialServer;
+  }
+
+  public void setNumberOfMonths(int numberOfMonths) {
+    this.numberOfMonths = numberOfMonths;
+  }
+
+  public void setNumberOfPlayers(int numberOfPlayers) {
+    this.numberOfPlayers = numberOfPlayers;
+  }
+
+  public void setPocs(List<PocCard> pocs) {
+    this.pocs = pocs;
+  }
+
+  public void setProjects(List<Project> projects) {
+    this.projects = projects;
+  }
+
+  public void setTools(List<ToolCard> tools) {
+    this.tools = tools;
+  }
+
+  public void setVersion(String version) {
+    this.version = version;
+  }
+
+  public void setWorkerSalary(Map<Integer, Integer> workerSalary) {
+    this.workerSalary = workerSalary;
+  }
 
 }
