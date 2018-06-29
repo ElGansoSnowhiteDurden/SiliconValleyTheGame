@@ -19,7 +19,6 @@ public class Action {
   private Integer level;
 
   private int startMonth;
-
   private int endMonth;
 
   public Action() {

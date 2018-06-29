@@ -26,14 +26,19 @@ public class RuleConfig {
 
   private List<Action> actions;
 
-  private List<ImprovementCard> improvements;
+  private List<Category> categories;
 
+  private List<ImprovementCard> improvements;
   private List<ToolCard> tools;
   private List<Project> projects;
   private List<PocCard> pocs;
+  private List<ConsultantCard> consultantRequests;
+
+  private Integer[] monthsOfPoc;
+  private Integer[] monthsOfConsultantRequests;
+
   private BillOfExchange billOfExchange;
   private Map<Integer, Integer> workerSalary;
-
   private Map<Integer, Integer> consultantSalary;
 
   public RuleConfig() {
@@ -44,8 +49,10 @@ public class RuleConfig {
       int initialEthereum, int initialServer, int initialDesk, int initialRoom,
       int initialEmployee, List<Action> actions, List<ImprovementCard> improvements,
       List<ToolCard> tools, List<Project> projects, List<PocCard> pocs,
-      BillOfExchange billOfExchange, Map<Integer, Integer> workerSalary,
-      Map<Integer, Integer> consultantSalary) {
+      List<ConsultantCard> consultantRequests, Integer[] monthsOfPoc,
+      Integer[] monthsOfConsultantRequests, BillOfExchange billOfExchange,
+      Map<Integer, Integer> workerSalary, Map<Integer, Integer> consultantSalary,
+      List<Category> categories) {
     super();
     this.version = version;
     this.numberOfMonths = numberOfMonths;
@@ -54,15 +61,19 @@ public class RuleConfig {
     this.initialServer = initialServer;
     this.initialDesk = initialDesk;
     this.initialRoom = initialRoom;
-    this.setInitialEmployee(initialEmployee);
+    this.initialEmployee = initialEmployee;
     this.actions = actions;
     this.improvements = improvements;
     this.tools = tools;
     this.projects = projects;
     this.pocs = pocs;
+    this.consultantRequests = consultantRequests;
+    this.monthsOfPoc = monthsOfPoc;
+    this.monthsOfConsultantRequests = monthsOfConsultantRequests;
     this.billOfExchange = billOfExchange;
     this.workerSalary = workerSalary;
     this.consultantSalary = consultantSalary;
+    this.categories = categories;
   }
 
   public List<Action> getActions() {
@@ -71,6 +82,14 @@ public class RuleConfig {
 
   public BillOfExchange getBillOfExchange() {
     return billOfExchange;
+  }
+
+  public List<Category> getCategories() {
+    return categories;
+  }
+
+  public List<ConsultantCard> getConsultantRequests() {
+    return consultantRequests;
   }
 
   public Map<Integer, Integer> getConsultantSalary() {
@@ -99,6 +118,14 @@ public class RuleConfig {
 
   public int getInitialServer() {
     return initialServer;
+  }
+
+  public Integer[] getMonthsOfConsultantRequests() {
+    return monthsOfConsultantRequests;
+  }
+
+  public Integer[] getMonthsOfPoc() {
+    return monthsOfPoc;
   }
 
   public int getNumberOfMonths() {
@@ -137,6 +164,14 @@ public class RuleConfig {
     this.billOfExchange = billOfExchange;
   }
 
+  public void setCategories(List<Category> categories) {
+    this.categories = categories;
+  }
+
+  public void setConsultantRequests(List<ConsultantCard> consultantRequests) {
+    this.consultantRequests = consultantRequests;
+  }
+
   public void setConsultantSalary(Map<Integer, Integer> consultantSalary) {
     this.consultantSalary = consultantSalary;
   }
@@ -163,6 +198,14 @@ public class RuleConfig {
 
   public void setInitialServer(int initialServer) {
     this.initialServer = initialServer;
+  }
+
+  public void setMonthsOfConsultantRequests(Integer[] monthsOfConsultantRequests) {
+    this.monthsOfConsultantRequests = monthsOfConsultantRequests;
+  }
+
+  public void setMonthsOfPoc(Integer[] monthsOfPoc) {
+    this.monthsOfPoc = monthsOfPoc;
   }
 
   public void setNumberOfMonths(int numberOfMonths) {
